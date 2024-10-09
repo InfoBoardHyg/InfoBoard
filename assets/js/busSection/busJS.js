@@ -1,6 +1,6 @@
 import busFetch from './modules/busFetch.js';
 
-export default function busSetup() {
+export default async function busSetup() {
     busFetch();
 }
 

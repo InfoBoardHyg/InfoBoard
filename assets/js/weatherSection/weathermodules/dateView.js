@@ -1,5 +1,4 @@
 export function dateView(date) {
-    console.log(date);
     const section = document.getElementById('vejr-info');
     const div = document.createElement('div');
     const weekday = document.createElement('p');
@@ -12,6 +11,6 @@ export function dateView(date) {
     div.appendChild(weekday);
     div.appendChild(day);
     div.appendChild(month);
-    
+
     
 }

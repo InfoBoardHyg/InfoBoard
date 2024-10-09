@@ -1,6 +1,6 @@
 import busSetup from "./busSection/busJS.js";
 
-busSetup();
+onInterval(10, async () => await busSetup());
 
 import timeSetup from "./timeSection/timeJS.js";
 
@@ -9,3 +9,9 @@ timeSetup();
 import weatherSetup from "./weatherSection/weather.js";
 
 weatherSetup();
+
+import { bindActivities,
+    onInterval
+ } from "./skemaSection/controller.js";
+
+bindActivities();
