@@ -1,5 +1,6 @@
 export function dateView(date) {
     const section = document.getElementById('vejr-info');
+    section.innerHTML = '';
     const div = document.createElement('div');
     const weekday = document.createElement('p');
     const day = document.createElement('p');
