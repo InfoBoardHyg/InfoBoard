@@ -9,6 +9,7 @@ export function weatherView(data) {
     temp.textContent = `${tempText}°C`;
 
     section.appendChild(div);
+    section.innerHTML = '';
     div.appendChild(icon);
     div.appendChild(temp);
 
