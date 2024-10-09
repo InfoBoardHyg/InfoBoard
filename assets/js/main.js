@@ -14,4 +14,4 @@ import { bindActivities,
     onInterval
  } from "./skemaSection/controller.js";
 
-bindActivities();
+ onInterval(10, async () => await bindActivities());
