@@ -11,9 +11,10 @@ body {
     display: grid;
     grid-template-columns: 3fr 4fr 3fr;
     background-color: Colors.$maincolor;
-    gap: 3rem;
-    max-height: 100vh;
-    max-width: 100vw;
+    gap: 2vw;
+    height: max-content;
+    // max-height: 100vh;
+    // max-width: 100vw;
     overflow: hidden;
 
     :last-child {
@@ -23,23 +24,23 @@ body {
     #left {
         margin: 3rem 0 3rem 3rem;
         background-color: Colors.$boxcolor;
-        padding: 1rem;
+        padding: 1vw;
         border-radius: 20px;
-        max-height: 90vh;
+        max-height: 80vh;
 
 
         h1 {
             text-align: center;
             color: white;
-            font-size: 2vw;
-            margin-bottom: -1rem;
+            font-size: 2.5vw;
+            margin-bottom: -1vw;
         }
 
         h2 {
             text-align: center;
-            margin-bottom: -1rem;
+            margin-bottom: -1vw;
             color: white;
-            font-size: 1.5vw;
+            font-size: 2vw;
             font-weight: normal;
         }
 
@@ -56,13 +57,13 @@ body {
                 display: flex;
                 justify-content: space-between;
                 background-color: white;
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.5vw;
                 height: 100%;
                 border-radius: 15px;
 
                 p {
                     padding: 1rem;
-                    width: 15%;
+                    width: 18%;
                     white-space: nowrap;
                     border-radius: 15px;
                     text-align: center;
@@ -71,7 +72,7 @@ body {
 
                 p:first-of-type {
                     font-weight: bold;
-                    margin-right: -5rem;
+                    margin-right: -3.8vw;
                     color: white;
                 }
 
@@ -126,14 +127,14 @@ body {
 
             h2 {
                 height: 100%;
-                padding: 0.25rem;
+                padding: 0.25vw;
                 border-radius: 10px;
             }
         }
     }
 
     #center {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1vw 1vw 1vw;
         border-radius: 20px;
         max-height: 90vh;
         margin: 3rem 0;
@@ -151,7 +152,7 @@ body {
         #tid-linje {
             position: absolute;
             width: 30%;
-            height: 1px;
+            height: 2px;
             background-color: white;
             top: 50%;
             left: 50%;
@@ -163,14 +164,14 @@ body {
             display: flex;
             background-color: white;
             justify-content: center;
-            padding: 4px;
+            padding: 0.15vw;
             border-radius: 10px;
             width: 30%;
 
             p {
                 text-align: center;
                 align-self: center;
-                font-size: 3.1vw;
+                font-size: 3.2vw;
                 background-color: black;
                 color: white;
                 width: 100%;
@@ -188,23 +189,27 @@ body {
         #opslag-container {
             background-color: Colors.$boxcolor;
             border-radius: 20px;
-            padding: 1rem;
+            padding: 0.5vw 1vw;
             color: white;
             margin-bottom: 4vh;
 
             h1 {
                 text-align: center;
-                font-size: 1.25vw;
+                font-size: 1.75vw;
                 margin-bottom: 1rem;
             }
 
             h2 {
-                font-size: 1vw;
+                font-size: 1.25vw;
+                margin-bottom: 0.5rem;
+            }
+            p {
+                font-size: 0.9vw;
                 margin-bottom: 0.5rem;
             }
 
             .newsWrapper {
-                margin-bottom: 2rem;
+                margin-bottom: 2.1vh;
             }
         }
 
@@ -244,11 +249,11 @@ body {
     background-image: url("../content/photo-1611401507236-b4721793035f.avif");
     background-size: cover;
     background-position-x: 25%;
-    height: 100%;
+    height: 100svh;
     width: 100%;
-    flex-grow: 1;
     color: white;
-    padding: 3rem;
+    padding: 1vw;
+    padding-top: 1.5vw;
     position: relative;
 
     #logo {
@@ -259,7 +264,7 @@ body {
         width: 80%;
         position: absolute;
         left: 50%;
-        top: 45%;
+        top: 38%;
         transform: translate(-50%, -50%);
 
         .bus-card {
@@ -285,7 +290,7 @@ body {
     #vejr-info {
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: 13svh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -317,7 +322,7 @@ body {
             height: 100%;
 
             p:first-of-type {
-                font-size: 3rem;
+                font-size: 2.2vw;
                 position: absolute;
                 left: 1rem;
                 bottom: 1rem;
@@ -326,10 +331,10 @@ body {
 
             img {
                 position: absolute;
-                width: 50%;
-                height: 50%;
-                top: 1rem;
-                right: 1rem;
+                width: 60%;
+                height: 60%;
+                top: 1vw;
+                right: 1vw;
                 aspect-ratio: 1/1;
             }
         }

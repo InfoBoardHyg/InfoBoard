@@ -1,5 +1,5 @@
 
-export function kantinefetch() {
+export async function kantinefetch() {
     fetch('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?type=json')
         .then(response => {
             if (!response.ok) {
