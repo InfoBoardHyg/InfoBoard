@@ -26,3 +26,7 @@ import { tavleSetup } from "./TavleSection/tavle.js";
 
 tavleSetup();
 // onInterval(10, async () => await tavleSetup());
+
+import { kantinefetch } from "./kantineSection/kantine.js";
+
+kantinefetch();

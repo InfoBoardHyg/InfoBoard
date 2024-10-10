@@ -9,13 +9,18 @@ export default function busView(bus) {
     // Create bus element
     const busElement = document.createElement('div');
     busElement.classList.add('bus');
+    
 
     for (let i = 0; i < 5; i++) {
         let currentBus = {
-            name: bus.MultiDepartureBoard.Departure[i].name,
+            name: bus.MultiDepartureBoard.Departure[i].name.split(' ')[1],
             time: bus.MultiDepartureBoard.Departure[i].time,
-            stop: bus.MultiDepartureBoard.Departure[i].stop
+            stop: bus.MultiDepartureBoard.Departure[i].stop.split(' ')[0]
         }
+
+        const busCard = document.createElement('div');
+        busCard.classList.add('bus-card');
+
 
         // Create bus name element
         const busNameElement = document.createElement('h3');
@@ -33,12 +38,12 @@ export default function busView(bus) {
         busStopElement.textContent = currentBus.stop;
 
         // Append bus name, time and stop elements to bus element
-        busElement.appendChild(busNameElement);
-        busElement.appendChild(busStopElement);
-        busElement.appendChild(busTimeElement);
+        busCard.appendChild(busNameElement);
+        busCard.appendChild(busStopElement);
+        busCard.appendChild(busTimeElement);
         
         // Append bus element to bus section
         
-        busSection.appendChild(busElement);
+        busSection.appendChild(busCard);
     }
 }

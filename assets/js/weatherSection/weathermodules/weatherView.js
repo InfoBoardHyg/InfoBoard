@@ -7,13 +7,12 @@ export function weatherView(data, date) {
     const weekday = document.createElement('p');
     const day = document.createElement('p');
     const month = document.createElement('p');
-    weekday.textContent = date.weekday;
-    day.textContent = date.day;
-    month.textContent = date.month;
+    weekday.textContent = date.weekday.toUpperCase();
+    day.textContent = date.day + '.' + date.month.toUpperCase();
+    
     section.appendChild(weatherDiv);
     weatherDiv.appendChild(weekday);
     weatherDiv.appendChild(day);
-    weatherDiv.appendChild(month);
 
     const div = document.createElement('div');
     const icon = document.createElement('img');
@@ -21,7 +20,7 @@ export function weatherView(data, date) {
     const temp = document.createElement('p');
     let tempText = Math.round(data.main.temp);
     
-    temp.textContent = `${tempText}°C`;
+    temp.textContent = `${tempText}°`;
 
     section.appendChild(div);
     div.appendChild(icon);
