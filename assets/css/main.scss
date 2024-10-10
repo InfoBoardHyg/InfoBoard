@@ -31,7 +31,7 @@ body {
         h1 {
             text-align: center;
             color: white;
-            font-size: 2rem;
+            font-size: 2vw;
             margin-bottom: -1rem;
         }
 
@@ -39,18 +39,18 @@ body {
             text-align: center;
             margin-bottom: -1rem;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.5vw;
             font-weight: normal;
         }
 
         h2:last-of-type {
-            margin-bottom: 1rem;
+            margin-bottom: 1vw;
         }
 
 
 
         #skema-cards {
-            margin-bottom: 1rem;
+            margin-bottom: 1vw;
 
             div {
                 display: flex;
@@ -66,7 +66,7 @@ body {
                     white-space: nowrap;
                     border-radius: 15px;
                     text-align: center;
-                    font-size: 1rem;
+                    font-size: 1vw;
                 }
 
                 p:first-of-type {
@@ -133,7 +133,7 @@ body {
     }
 
     #center {
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
         border-radius: 20px;
         max-height: 90vh;
         margin: 3rem 0;
@@ -141,7 +141,7 @@ body {
         #tid-div {
             display: flex;
             justify-content: center;
-            height: 5rem;
+            height: 5vw;
             position: relative;
             width: 100%;
             margin-bottom: 1rem;
@@ -170,7 +170,7 @@ body {
             p {
                 text-align: center;
                 align-self: center;
-                font-size: 3.1rem;
+                font-size: 3.1vw;
                 background-color: black;
                 color: white;
                 width: 100%;
@@ -190,16 +190,16 @@ body {
             border-radius: 20px;
             padding: 1rem;
             color: white;
-            margin-bottom: 1.25rem;
+            margin-bottom: 4vh;
 
             h1 {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.25vw;
                 margin-bottom: 1rem;
             }
 
             h2 {
-                font-size: 1.25rem;
+                font-size: 1vw;
                 margin-bottom: 0.5rem;
             }
 
@@ -217,7 +217,7 @@ body {
             display: flex;
             flex-direction: column;
             text-align: center;
-            padding-bottom: 2.3rem;
+            padding-bottom: 2.3vh;
 
             #icon {
                 font-size: 1em;
@@ -227,13 +227,13 @@ body {
 
             h3 {
                 color: white;
-                font-size: 2rem;
+                font-size: 1.8vw;
                 margin-bottom: 10px;
             }
 
             #menu {
 
-                font-size: 1.5rem;
+                font-size: 1.25vw;
 
             }
         }
@@ -259,7 +259,7 @@ body {
         width: 80%;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 45%;
         transform: translate(-50%, -50%);
 
         .bus-card {
@@ -267,13 +267,16 @@ body {
             margin-bottom: 0.5rem;
             background-color: Colors.$boxcolor;
             justify-content: space-between;
-            font-size: 1.5rem;
+            font-size: 1.5vw;
             border-radius: 20px;
+            align-items: center;
+            padding-right: 1rem;
             h3 {
                 background-color: black;
                 padding: 0.5rem 1rem;
                 border-radius: 20px;
                 width: 15%;
+                text-align: center;
 
             }
         }
@@ -286,11 +289,12 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        padding-right: 5rem;
-        padding-bottom: 2rem;
+        padding-right: 4.2vw;
+        padding-bottom: 3.5vh;
         text-align: end;
         align-items: end;
         color: white;
+        margin-bottom: 1.2vh;
 
         div:first-of-type {
             background-color: Colors.$boxcolor;

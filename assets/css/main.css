@@ -27,21 +27,21 @@ body #left {
 body #left h1 {
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 2vw;
   margin-bottom: -1rem;
 }
 body #left h2 {
   text-align: center;
   margin-bottom: -1rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: normal;
 }
 body #left h2:last-of-type {
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 body #left #skema-cards {
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 body #left #skema-cards div {
   display: flex;
@@ -57,7 +57,7 @@ body #left #skema-cards div p {
   white-space: nowrap;
   border-radius: 15px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 body #left #skema-cards div p:first-of-type {
   font-weight: bold;
@@ -105,7 +105,7 @@ body #left #skema-uddanelser h2 {
   border-radius: 10px;
 }
 body #center {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   border-radius: 20px;
   max-height: 90vh;
   margin: 3rem 0;
@@ -113,7 +113,7 @@ body #center {
 body #center #tid-div {
   display: flex;
   justify-content: center;
-  height: 5rem;
+  height: 5vw;
   position: relative;
   width: 100%;
   margin-bottom: 1rem;
@@ -139,7 +139,7 @@ body #center #tid-container {
 body #center #tid-container p {
   text-align: center;
   align-self: center;
-  font-size: 3.1rem;
+  font-size: 3.1vw;
   background-color: black;
   color: white;
   width: 100%;
@@ -156,15 +156,15 @@ body #center #opslag-container {
   border-radius: 20px;
   padding: 1rem;
   color: white;
-  margin-bottom: 1.25rem;
+  margin-bottom: 4vh;
 }
 body #center #opslag-container h1 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   margin-bottom: 1rem;
 }
 body #center #opslag-container h2 {
-  font-size: 1.25rem;
+  font-size: 1vw;
   margin-bottom: 0.5rem;
 }
 body #center #opslag-container .newsWrapper {
@@ -179,7 +179,7 @@ body #center #kantine-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 2.3rem;
+  padding-bottom: 2.3vh;
 }
 body #center #kantine-container #icon {
   font-size: 1em;
@@ -188,11 +188,11 @@ body #center #kantine-container #icon {
 }
 body #center #kantine-container h3 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.8vw;
   margin-bottom: 10px;
 }
 body #center #kantine-container #menu {
-  font-size: 1.5rem;
+  font-size: 1.25vw;
 }
 
 #right {
@@ -213,7 +213,7 @@ body #center #kantine-container #menu {
   width: 80%;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
 }
 #right #bus-cards .bus-card {
@@ -221,14 +221,17 @@ body #center #kantine-container #menu {
   margin-bottom: 0.5rem;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   border-radius: 20px;
+  align-items: center;
+  padding-right: 1rem;
 }
 #right #bus-cards .bus-card h3 {
   background-color: black;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   width: 15%;
+  text-align: center;
 }
 #right #vejr-info {
   width: 100%;
@@ -237,11 +240,12 @@ body #center #kantine-container #menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  padding-right: 5rem;
-  padding-bottom: 2rem;
+  padding-right: 4.2vw;
+  padding-bottom: 3.5vh;
   text-align: end;
   align-items: end;
   color: white;
+  margin-bottom: 1.2vh;
 }
 #right #vejr-info div:first-of-type {
   background-color: rgba(0, 0, 0, 0.5);
