@@ -51,7 +51,7 @@ body {
 
 
         #skema-cards {
-            margin-bottom: 1vw;
+            margin-bottom: 1.5vw;
 
             div {
                 display: flex;
@@ -264,7 +264,7 @@ body {
         width: 80%;
         position: absolute;
         left: 50%;
-        top: 38%;
+        top: 42%;
         transform: translate(-50%, -50%);
 
         .bus-card {
@@ -294,7 +294,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        padding-right: 4.2vw;
+        padding-right: 2.2vw;
         padding-bottom: 3.5vh;
         text-align: end;
         align-items: end;
