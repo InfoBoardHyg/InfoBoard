@@ -1,7 +1,6 @@
 import { fetchWeather } from './weathermodules/weatherfetch.js';
-import { getCurrentDate } from './weathermodules/getCurrentDate.js';
-export default function weathersetup() {
+export default async function weathersetup() {
     fetchWeather();
-    getCurrentDate()
+    
     
 }

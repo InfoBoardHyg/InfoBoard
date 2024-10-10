@@ -9,7 +9,7 @@ export function newsView(data) {
     
     
     let newsContainer = document.getElementById("opslag-container");
-    newsContainer.innerHTML = '';
+    newsContainer.innerHTML = '<h1>Nyheder</h1>';
     newsArray.forEach((element, index) => {
         if (index < 3) {
             let newsWrapper = document.createElement("div");
@@ -22,11 +22,12 @@ export function newsView(data) {
             newsDescription.textContent = element.description;
 
             let newsDate = document.createElement("p");
-            newsDate.textContent = element.pubDate;
+            newsDate.textContent = new Date(element.pubDate).toLocaleDateString('da-DK') + " " + new Date(element.pubDate).toLocaleTimeString('da-DK');
 
             newsWrapper.appendChild(newsTitle);
             newsWrapper.appendChild(newsDescription);
             newsWrapper.appendChild(newsDate);
+            
             newsContainer.appendChild(newsWrapper);
         }
     });

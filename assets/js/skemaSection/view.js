@@ -32,17 +32,34 @@ export const createActivityView = (arr) => {
       let activityWrapper = createEl("div");
 
       // Create all the P tags
-      let p_team = createElWithText("p", `Team: ${element.Team}`);
-      let p_room = createElWithText("p", `Room: ${element.Room}`);
-      let p_education = createElWithText("p", `${element.Education}`);
-      let p_subject = createElWithText("p", `Subject: ${element.Subject}`);
+      let p_team = createElWithText("p", `${element.Team}`);
+      let p_room = createElWithText("p", `${element.Room}`);
+      if (element.Education === 'Mediegrafiker') {
+        p_room.classList.add('mediegrafiker')
+      } else if (element.Education === 'Webudvikler') {
+        p_room.classList.add('webudvikler')
+      } else if (element.Education === 'Datatekniker') {
+        p_room.classList.add('datatekniker')
+      }  else if (element.Education === 'Grafisk Tekniker') {
+        p_room.classList.add('grafiskTekniker')
+      } else if (element.Education === 'Grafisk teknik.') {
+        p_room.classList.add('grafiskTeknik')
+      } else if (element.Education === 'Data/komm.udd.') {
+        p_room.classList.add('dataKommUdd')
+      } else if (element.Education === 'Brobyg teknisk') {
+        p_room.classList.add('brobygTeknisk')
+      } else if (element.Education === 'AMU indmeld') {
+        p_room.classList.add('amuIndmeld')
+      }
+      
+      let p_subject = createElWithText("p", `${element.Subject}`);
       let p_startDate = createElWithText(
         "p",
         `${toLocaleTime(element.StartDate).slice(0, 5)}`
       );
 
       // Append elements to DOM
-      let nodeList = [p_education, p_room, p_subject, p_team, p_startDate];
+      let nodeList = [ p_room,p_team, p_subject, p_startDate];
       appendNodeList(nodeList, activityWrapper);
       activityContainer.appendChild(activityWrapper);
     }
