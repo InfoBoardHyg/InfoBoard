@@ -207,7 +207,7 @@ body #center #kantine-container #menu {
   width: 100%;
   color: white;
   padding: 1vw;
-  padding-top: 1.5vw;
+  padding-top: 2.5vw;
   position: relative;
 }
 #right #logo {
@@ -256,11 +256,11 @@ body #center #kantine-container #menu {
   padding: 1rem;
 }
 #right #vejr-info div:first-of-type p:first-of-type {
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin-bottom: -2rem;
 }
 #right #vejr-info div:first-of-type p:last-of-type {
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 #right #vejr-info div:last-of-type {
   position: relative;
