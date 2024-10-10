@@ -116,7 +116,7 @@ body #center #tid-div {
   height: 5vw;
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 body #center #tid-linje {
   position: absolute;
@@ -183,7 +183,7 @@ body #center #kantine-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 2.3vh;
+  padding-bottom: 1vh;
 }
 body #center #kantine-container #icon {
   font-size: 1em;
