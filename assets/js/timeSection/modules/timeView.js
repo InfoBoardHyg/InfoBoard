@@ -1,7 +1,7 @@
 // Function to display the current time
 export default function timeView() {
   const tidContainer = document.getElementById("tid-container");
-  const currentTime = new Date().toLocaleTimeString();
+  const currentTime = new Date().toLocaleTimeString('da-DK');
   const time = currentTime.split(".");
   
   const timeHour = document.createElement('p')
@@ -15,4 +15,4 @@ export default function timeView() {
   tidContainer.appendChild(timeMinute);
 }
 
-setInterval(timeView, 1000);
+
