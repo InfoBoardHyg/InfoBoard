@@ -8,5 +8,5 @@ export const activityConfig = {
     "Mediegrafiker",
     "Webudvikler",
   ],
-  maxNum: 10,
+  maxNum: 8,
 };
