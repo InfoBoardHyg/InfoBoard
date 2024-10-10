@@ -26,7 +26,7 @@ body {
         background-color: Colors.$boxcolor;
         padding: 1vw;
         border-radius: 20px;
-        max-height: 85vh;
+        max-height: 87vh;
 
 
         h1 {
@@ -290,7 +290,7 @@ body {
     #vejr-info {
         width: 100%;
         position: absolute;
-        bottom: 13svh;
+        bottom: 5svh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;

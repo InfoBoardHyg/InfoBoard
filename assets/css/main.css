@@ -22,7 +22,7 @@ body #left {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1vw;
   border-radius: 20px;
-  max-height: 85vh;
+  max-height: 87vh;
 }
 body #left h1 {
   text-align: center;
@@ -240,7 +240,7 @@ body #center #kantine-container #menu {
 #right #vejr-info {
   width: 100%;
   position: absolute;
-  bottom: 13svh;
+  bottom: 5svh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
